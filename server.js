@@ -9,4 +9,4 @@ var server = http.createServer(function (request, response) {
 
 server.listen(port)
 
-console.log('Server running at http://nodejs.ggangireddy.com:' + port)
+console.log('Server running at http://node.ggangireddy.com:' + port)
