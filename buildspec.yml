@@ -22,7 +22,7 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-      - printf '[{"name":"springworks-nodejs","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > springworks-nodejs-task.json
-      - cat springworks-nodejs-task.json 
+      - printf '[{"name":"springworks-nodejs","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - cat imagedefinitions.json 
 artifacts:
-    files: springworks-nodejs-task.json
+    files: imagedefinitions.json
